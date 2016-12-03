@@ -1,0 +1,61 @@
+.menu {
+	background-color: #1B1915;
+	border-bottom: 3px solid #201F1B;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+	z-index: 99999;
+	height: 50px;
+
+	.menu-btn {
+		width: 33px;
+		height: 50px;
+		vertical-align: middle;
+		display: inline-block;
+		cursor: pointer;
+		text-align: center;
+		line-height: 50px;
+		background: transparent;
+		padding-right: 5px;
+		padding-left: 5px;
+		background-repeat: no-repeat;
+		background-position: center center;
+
+		&.figure {
+			float: right;
+			width: 80px;
+			font-weight: bold;
+			padding-left: 30px;
+			color: #fff;
+			position: relative;
+			overflow: hidden;
+
+			img {
+				top: -17px;
+				left: -7px;
+				position: absolute;
+			}
+		}
+
+		&.default {
+			background-image: url(/img/default.gif);
+		}
+
+		&.navigator {
+			background-image: url(/img/navigator_icon.png);
+		}
+
+		&.events {
+			background-image: url(/img/events_icon.gif);
+		}
+
+		&.catalog {
+			background-image: url(/img/catalog_icon.gif);
+		}
+
+		&:hover {
+			background-color: #302B27;
+		}
+	}
+}
