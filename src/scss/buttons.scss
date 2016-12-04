@@ -1,0 +1,29 @@
+.btn {
+	background-color: #E2E2E2;
+	border-radius: 6px;
+	padding: 5px;
+	position: relative;
+	overflow: hidden;
+	border: 1px solid #919191;
+	cursor: pointer;
+	font-weight: bold;
+
+	&::before, &::after {
+		position: absolute;
+		left: 0;
+		right: 0;
+		height: 3px;
+		content: ' ';
+		border-radius: 4px;
+	}
+
+	&::before {
+		top: 0;
+		background-color: #fff;
+	}
+
+	&::after {
+		bottom: 0;
+		background-color: #D3D3D3;
+	}
+}

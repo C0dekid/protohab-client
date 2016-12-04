@@ -1,0 +1,28 @@
+.line-heading {
+	text-align: center;
+	color: #646464;
+	text-transform: uppercase;
+	font-size: 8pt;
+	font-weight: bold;
+	width: 100%;
+	display: inline-block;
+	position: relative;
+
+	&:before {
+		position: absolute;
+		content: ' ';
+		left: 10px;
+		right: 10px;
+		height: 1px;
+		background-color: #C8C8C8;
+		border-bottom: 1px solid #FAFAFA;
+		z-index: -1;
+		top: 5px;
+	}
+
+	span {
+		background-color: #E2E2E2;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+}
